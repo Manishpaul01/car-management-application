@@ -1,0 +1,6 @@
+{
+    "name": "car-management-application",
+    "scripts": {
+        "start": "npx serve"
+    }
+}

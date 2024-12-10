@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Car</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">Car Management Application</a>
+                <button class="navbar-toggler" type="button" data-toggle="show" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="add.html" class="nav-link">Add Car</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="list.html" class="nav-link">List Cars</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container">
+            <h1>Add a New Car</h1>
+            <form id="add-product-form">
+                <div class="form-group">
+                    <label for="product-name">Car Name</label>
+                    <input type="text" id="product-name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="product-price">Price</label>
+                    <input type="number" id="product-price" class="form-control" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="product-stock">Stock</label>
+                    <input type="number" id="product-stock" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="product-description">Description</label>
+                    <textarea id="product-description" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Car</button>
+            </form>
+        </main>
+        <footer class="bg-dark text-white mt-4">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; <span id="current-year"></span> Manish Paul</p>
+                    </div>
+                    <div class="col-md-6 text-md-right">
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-white">Home</a></li>
+                            <li><a href="about.html" class="text-white">About</a></li>
+                            <li><a href="contact.html" class="text-white">Contact</a></li>
+                            <li><a href="add.html" class="text-white">Add Car</a></li>
+                            <li><a href="list.html" class="text-white">Car List</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="app/Product.js"></script>
+        <script src="app/product.mock.service.js"></script>
+        <script src="script.js"></script>
+
+
+        <script src="app/add.js"></script>
+    </body>
+
+</html>
